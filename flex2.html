@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    a {
+        margin-inline: 135px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .item {
+        margin-inline: 10px;
+        width: 94px;
+        height: 66px;
+        background-color: tomato;
+        margin: 10px;
+        padding: 3px;
+    }
+
+
+    .container {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .container2 {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: center;
+        flex-wrap: wrap;
+    }
+
+    .container3 {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .container4 {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: stretch;
+        flex-wrap: wrap;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .mainContainer2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+</style>
+
+<body style="background-color: rgb(252, 212, 219);">
+    <header>
+        <a href="/index.html">Flex Direction</a> |
+        <a href="/flex2.html">Align Items</a> |
+        <a href="/flex3.html">Justify Content</a>|
+        <a href="/flex4.html">Align Content</a>
+        <hr>
+    </header>
+    <h1 style="color: black; margin-inline: 25px;
+        font-size: 57px;font-family: 'system-ui'; margin-top: -4px;">align-items</h1>
+    <div class="mainContainer">
+        <div class="container">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+        <div class="container2">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+        <div class="container3">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+        <div class="container4">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+    </div>
+    <div class="mainContainer2">
+        <p style="margin-top: 3px;
+    margin-left: 124px;
+font-family: fantasy;
+font-size: 31px;;">flex-start</p>
+        <p style="margin-top: 3px;
+ margin-left: 264px;
+font-family: fantasy;
+font-size: 31px;;">center</p>
+        <p style="margin-top: 3px;
+ margin-left: 295px;
+font-family: fantasy;
+font-size: 31px;;">flex-end</p>
+        <p style="margin-top: 3px;
+ margin-left: 275px;
+font-family: fantasy;
+font-size: 31px;;">stretch</p>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    a {
+        margin-inline: 135px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .item {
+        margin-inline: 10px;
+        width: 94px;
+        height: 66px;
+        background-color: tomato;
+        margin: 10px;
+        padding: 3px;
+    }
+
+
+    .container {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container2 {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container3 {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .container4 {
+        height: 295px;
+        width: 250px;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .mainContainer2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+</style>
+
+<body style="background-color: rgb(252, 212, 219);">
+    <header>
+        <a href="/index.html">Flex Direction</a> |
+        <a href="/flex2.html">Align Items</a> |
+        <a href="/flex3.html">Justify Content</a>|
+        <a href="/flex4.html">Align Content</a>
+        <hr>
+    </header>
+    <h1 style="color: rgb(189, 5, 36); margin-inline: 25px;
+    font-size: 57px;font-family: 'system-ui'; margin-top: -4px;">CSS FLEXBOX</h1>
+    <h2 style="font-family: sans-serif;
+    font-size: 40px;">flex-direction</h2>
+
+    <div class="mainContainer">
+        <div class="container">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+        <div class="container2">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+        <div class="container3">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+        <div class="container4">
+            <div class="item" id="item-1"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-4"></div>
+            <div class="item" id="item-5"></div>
+            <div class="item" id="item-6"></div>
+        </div>
+
+    </div>
+    <div class="mainContainer2">
+        <p style="margin-top: 3px;
+        margin-left: 124px;
+    font-family: fantasy;
+    font-size: 31px;;">row</p>
+        <p style="margin-top: 3px;
+     margin-left: 318px;
+ font-family: fantasy;
+ font-size: 31px;;">column</p>
+        <p style="margin-top: 3px;
+     margin-left: 289px;
+ font-family: fantasy;
+ font-size: 31px;;">row-reverse</p>
+        <p style="margin-top: 3px;
+     margin-left: 218px;
+ font-family: fantasy;
+ font-size: 31px;;">column-reverse</p>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
